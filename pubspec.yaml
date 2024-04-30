@@ -1,7 +1,7 @@
-name: cash_api
+name: emaopay_api
 version: 1.0.0
-description: Api for cash api.
-homepage: https://github.com/jiejie-dev/cash-api-dart
+description: Api for emaopay api.
+homepage: https://github.com/emaopay/emaopay-sdk-dart
 
 environment:
   sdk: '>=2.17.0 <3.0.0'

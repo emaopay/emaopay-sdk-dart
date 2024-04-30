@@ -4,7 +4,7 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:cash_api/src/auth/auth.dart';
+import 'package:emaopay_api/src/auth/auth.dart';
 
 class ApiKeyAuthInterceptor extends AuthInterceptor {
   final Map<String, String> apiKeys = {};

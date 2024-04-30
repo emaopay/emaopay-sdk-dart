@@ -3,7 +3,7 @@
 //
 
 // ignore_for_file: unused_element
-import 'package:cash_api/src/model/emaopay_credentials.dart';
+import 'package:emaopay_api/src/model/emaopay_credentials.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'emaopay_upload_credits.g.dart';

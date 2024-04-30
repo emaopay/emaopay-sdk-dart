@@ -1,8 +1,8 @@
-# cash_api.model.EmaopayQrCode
+# emaopay_api.model.EmaopayQrCode
 
 ## Load the model package
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 ```
 
 ## Properties

@@ -1,8 +1,8 @@
-# cash_api.api.DefaultApi
+# emaopay_api.api.DefaultApi
 
 ## Load the API package
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 ```
 
 All URIs are relative to *http://emaopay.com/v2*
@@ -50,9 +50,9 @@ Method | HTTP request | Description
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String xMonitorId = xMonitorId_example; // String | 监控Id
 final String xToken = xToken_example; // String | ApiToken
 
@@ -94,9 +94,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateMerchantParams merchant = ; // EmaopayCreateMerchantParams | 商户
 
 try {
@@ -137,9 +137,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateMonitorParams monitor = ; // EmaopayCreateMonitorParams | 监控
 
 try {
@@ -180,9 +180,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 
 try {
     final response = api.createNewMerchant();
@@ -219,9 +219,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateNewMonitorParams monitor = ; // EmaopayCreateNewMonitorParams | 监控
 
 try {
@@ -262,9 +262,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateOrderParams params = ; // EmaopayCreateOrderParams | 订单
 final String xSignature = xSignature_example; // String | 签名
 
@@ -307,9 +307,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateQrCodeParams qrCode = ; // EmaopayCreateQrCodeParams | 二维码
 
 try {
@@ -350,9 +350,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 监控Id
 
 try {
@@ -392,9 +392,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayDeleteQrCodeParams qrCode = ; // EmaopayDeleteQrCodeParams | 二维码
 
 try {
@@ -434,9 +434,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 订单Id
 
 try {
@@ -477,9 +477,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 商户Id
 
 try {
@@ -520,9 +520,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 
 try {
     final response = api.getMerchantListByUserId();
@@ -559,9 +559,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 监控Id
 
 try {
@@ -602,9 +602,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String merchantId = merchantId_example; // String | 商户Id
 
 try {
@@ -645,9 +645,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String merchantId = merchantId_example; // String | 商户Id
 final int pageIndex = 56; // int | 页码
 final int pageSize = 56; // int | 每页数量
@@ -692,9 +692,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String monitorId = monitorId_example; // String | 监控Id
 final int pageIndex = 56; // int | 页码
 final int pageSize = 56; // int | 每页数量
@@ -739,9 +739,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 订单Id
 
 try {
@@ -782,9 +782,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 
 try {
     final response = api.getOrderListByUserId();
@@ -821,9 +821,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String status = status_example; // String | 订单状态
 final String merchantId = merchantId_example; // String | 商户Id
 final String productId = productId_example; // String | 产品Id
@@ -872,9 +872,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String merchantId = merchantId_example; // String | 订单Id
 
 try {
@@ -915,9 +915,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String monitorId = monitorId_example; // String | 商户Id
 final int pageIndex = 56; // int | 页码
 final int pageSize = 56; // int | 每页数量
@@ -962,9 +962,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String merchantId = merchantId_example; // String | 商户Id
 
 try {
@@ -1005,9 +1005,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 
 try {
     final response = api.getUserInfo();
@@ -1044,9 +1044,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayLoginParams params = ; // EmaopayLoginParams | 登录参数
 
 try {
@@ -1087,9 +1087,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String id = id_example; // String | 订单Id
 
 try {
@@ -1130,9 +1130,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayMonitorMessageParams monitorMessage = ; // EmaopayMonitorMessageParams | 监控消息
 final String xMonitorId = xMonitorId_example; // String | 监控Id
 final String xToken = xToken_example; // String | ApiToken
@@ -1176,9 +1176,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final String monitorId = monitorId_example; // String | 监控Id
 
 try {
@@ -1218,9 +1218,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayRegisterParams params = ; // EmaopayRegisterParams | 注册参数
 
 try {
@@ -1260,9 +1260,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateMerchantParams merchant = ; // EmaopayCreateMerchantParams | 商户
 final String id = id_example; // String | 商户Id
 
@@ -1305,9 +1305,9 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 
-final api = CashApi().getDefaultApi();
+final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateMonitorParams monitor = ; // EmaopayCreateMonitorParams | 监控
 final String id = id_example; // String | 监控Id
 

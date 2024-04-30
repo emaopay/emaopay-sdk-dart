@@ -6,28 +6,28 @@ import 'dart:async';
 
 // ignore: unused_import
 import 'dart:convert';
-import 'package:cash_api/src/deserialize.dart';
+import 'package:emaopay_api/src/deserialize.dart';
 import 'package:dio/dio.dart';
 
-import 'package:cash_api/src/model/emaopay_create_merchant_params.dart';
-import 'package:cash_api/src/model/emaopay_create_monitor_params.dart';
-import 'package:cash_api/src/model/emaopay_create_new_monitor_params.dart';
-import 'package:cash_api/src/model/emaopay_create_order_params.dart';
-import 'package:cash_api/src/model/emaopay_create_qr_code_params.dart';
-import 'package:cash_api/src/model/emaopay_delete_qr_code_params.dart';
-import 'package:cash_api/src/model/emaopay_login_params.dart';
-import 'package:cash_api/src/model/emaopay_login_response.dart';
-import 'package:cash_api/src/model/emaopay_merchant.dart';
-import 'package:cash_api/src/model/emaopay_monitor.dart';
-import 'package:cash_api/src/model/emaopay_monitor_message_params.dart';
-import 'package:cash_api/src/model/emaopay_order.dart';
-import 'package:cash_api/src/model/emaopay_paged_response_emaopay_monitor_message.dart';
-import 'package:cash_api/src/model/emaopay_paged_response_emaopay_order.dart';
-import 'package:cash_api/src/model/emaopay_paged_response_emaopay_qr_code.dart';
-import 'package:cash_api/src/model/emaopay_qr_code.dart';
-import 'package:cash_api/src/model/emaopay_register_params.dart';
-import 'package:cash_api/src/model/emaopay_upload_credits.dart';
-import 'package:cash_api/src/model/emaopay_user.dart';
+import 'package:emaopay_api/src/model/emaopay_create_merchant_params.dart';
+import 'package:emaopay_api/src/model/emaopay_create_monitor_params.dart';
+import 'package:emaopay_api/src/model/emaopay_create_new_monitor_params.dart';
+import 'package:emaopay_api/src/model/emaopay_create_order_params.dart';
+import 'package:emaopay_api/src/model/emaopay_create_qr_code_params.dart';
+import 'package:emaopay_api/src/model/emaopay_delete_qr_code_params.dart';
+import 'package:emaopay_api/src/model/emaopay_login_params.dart';
+import 'package:emaopay_api/src/model/emaopay_login_response.dart';
+import 'package:emaopay_api/src/model/emaopay_merchant.dart';
+import 'package:emaopay_api/src/model/emaopay_monitor.dart';
+import 'package:emaopay_api/src/model/emaopay_monitor_message_params.dart';
+import 'package:emaopay_api/src/model/emaopay_order.dart';
+import 'package:emaopay_api/src/model/emaopay_paged_response_emaopay_monitor_message.dart';
+import 'package:emaopay_api/src/model/emaopay_paged_response_emaopay_order.dart';
+import 'package:emaopay_api/src/model/emaopay_paged_response_emaopay_qr_code.dart';
+import 'package:emaopay_api/src/model/emaopay_qr_code.dart';
+import 'package:emaopay_api/src/model/emaopay_register_params.dart';
+import 'package:emaopay_api/src/model/emaopay_upload_credits.dart';
+import 'package:emaopay_api/src/model/emaopay_user.dart';
 
 class DefaultApi {
 

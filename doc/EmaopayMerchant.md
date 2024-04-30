@@ -1,8 +1,8 @@
-# cash_api.model.EmaopayMerchant
+# emaopay_api.model.EmaopayMerchant
 
 ## Load the model package
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 ```
 
 ## Properties

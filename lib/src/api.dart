@@ -3,17 +3,17 @@
 //
 
 import 'package:dio/dio.dart';
-import 'package:cash_api/src/auth/api_key_auth.dart';
-import 'package:cash_api/src/auth/basic_auth.dart';
-import 'package:cash_api/src/auth/bearer_auth.dart';
-import 'package:cash_api/src/auth/oauth.dart';
-import 'package:cash_api/src/api/default_api.dart';
+import 'package:emaopay_api/src/auth/api_key_auth.dart';
+import 'package:emaopay_api/src/auth/basic_auth.dart';
+import 'package:emaopay_api/src/auth/bearer_auth.dart';
+import 'package:emaopay_api/src/auth/oauth.dart';
+import 'package:emaopay_api/src/api/default_api.dart';
 
-class CashApi {
+class EmaopayApi {
   static const String basePath = r'http://emaopay.com/v2';
 
   final Dio dio;
-  CashApi({
+  EmaopayApi({
     Dio? dio,
     String? basePathOverride,
     List<Interceptor>? interceptors,

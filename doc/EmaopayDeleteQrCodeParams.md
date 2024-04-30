@@ -1,8 +1,8 @@
-# cash_api.model.EmaopayDeleteQrCodeParams
+# emaopay_api.model.EmaopayDeleteQrCodeParams
 
 ## Load the model package
 ```dart
-import 'package:cash_api/api.dart';
+import 'package:emaopay_api/api.dart';
 ```
 
 ## Properties
