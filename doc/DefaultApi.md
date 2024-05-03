@@ -254,7 +254,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **createOrder**
-> EmaopayOrder createOrder(params, xSignature)
+> EmaopayOrder createOrder(params)
 
 创建订单
 
@@ -266,10 +266,9 @@ import 'package:emaopay_api/api.dart';
 
 final api = EmaopayApi().getDefaultApi();
 final EmaopayCreateOrderParams params = ; // EmaopayCreateOrderParams | 订单
-final String xSignature = xSignature_example; // String | 签名
 
 try {
-    final response = api.createOrder(params, xSignature);
+    final response = api.createOrder(params);
     print(response);
 } catch on DioException (e) {
     print('Exception when calling DefaultApi->createOrder: $e\n');
@@ -281,7 +280,6 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **params** | [**EmaopayCreateOrderParams**](EmaopayCreateOrderParams.md)| 订单 | 
- **xSignature** | **String**| 签名 | 
 
 ### Return type
 

@@ -427,7 +427,6 @@ _responseData = rawData == null ? null : deserialize<EmaopayMonitor, EmaopayMoni
   ///
   /// Parameters:
   /// * [params] - 订单
-  /// * [xSignature] - 签名
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -439,7 +438,6 @@ _responseData = rawData == null ? null : deserialize<EmaopayMonitor, EmaopayMoni
   /// Throws [DioException] if API call or serialization fails
   Future<Response<EmaopayOrder>> createOrder({ 
     required EmaopayCreateOrderParams params,
-    required String xSignature,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -451,7 +449,6 @@ _responseData = rawData == null ? null : deserialize<EmaopayMonitor, EmaopayMoni
     final _options = Options(
       method: r'POST',
       headers: <String, dynamic>{
-        r'X-Signature': xSignature,
         ...?headers,
       },
       extra: <String, dynamic>{
