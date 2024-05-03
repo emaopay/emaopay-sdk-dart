@@ -20,7 +20,7 @@ For more information, please visit [https://emaopay.com/support](https://emaopay
 To use the package from [pub.dev](https://pub.dev), please include the following in pubspec.yaml
 ```yaml
 dependencies:
-  emaopay_api: 1.4.4
+  emaopay_api: 1.4.5
 ```
 
 ### Github
@@ -63,7 +63,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://emaopay.com/v2*
+All URIs are relative to *http://emaopay.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

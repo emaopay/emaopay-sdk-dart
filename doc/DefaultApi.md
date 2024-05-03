@@ -5,7 +5,7 @@
 import 'package:emaopay_api/api.dart';
 ```
 
-All URIs are relative to *http://emaopay.com/v2*
+All URIs are relative to *http://emaopay.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

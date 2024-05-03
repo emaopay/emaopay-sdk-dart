@@ -10,7 +10,7 @@ import 'package:emaopay_api/src/auth/oauth.dart';
 import 'package:emaopay_api/src/api/default_api.dart';
 
 class EmaopayApi {
-  static const String basePath = r'http://emaopay.com/v2';
+  static const String basePath = r'http://emaopay.com';
 
   final Dio dio;
   EmaopayApi({
