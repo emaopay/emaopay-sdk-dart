@@ -20,7 +20,7 @@ For more information, please visit [https://emaopay.com/support](https://emaopay
 To use the package from [pub.dev](https://pub.dev), please include the following in pubspec.yaml
 ```yaml
 dependencies:
-  emaopay_api: 1.6.3
+  emaopay_api: 1.6.4
 ```
 
 ### Github

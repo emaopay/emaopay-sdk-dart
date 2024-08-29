@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **createdAt** | [**DateTime**](DateTime.md) |  | [optional] 
 **deletedAt** | [**DateTime**](DateTime.md) |  | [optional] 
+**description** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **key** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 

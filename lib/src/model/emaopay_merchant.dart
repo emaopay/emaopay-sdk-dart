@@ -22,6 +22,8 @@ class EmaopayMerchant {
 
      this.deletedAt,
 
+     this.description,
+
      this.id,
 
      this.key,
@@ -54,6 +56,18 @@ class EmaopayMerchant {
 
 
   DateTime? deletedAt;
+
+
+
+  @JsonKey(
+    
+    name: r'description',
+    required: false,
+    includeIfNull: false
+  )
+
+
+  String? description;
 
 
 
@@ -121,6 +135,7 @@ class EmaopayMerchant {
   bool operator ==(Object other) => identical(this, other) || other is EmaopayMerchant &&
      other.createdAt == createdAt &&
      other.deletedAt == deletedAt &&
+     other.description == description &&
      other.id == id &&
      other.key == key &&
      other.name == name &&
@@ -131,6 +146,7 @@ class EmaopayMerchant {
   int get hashCode =>
     createdAt.hashCode +
     deletedAt.hashCode +
+    description.hashCode +
     id.hashCode +
     key.hashCode +
     name.hashCode +
