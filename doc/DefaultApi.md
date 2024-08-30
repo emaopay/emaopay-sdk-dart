@@ -811,7 +811,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPagedOrderList**
-> List<EmaopayPagedResponseEmaopayOrder> getPagedOrderList(status, merchantId, productId, searchKey, pageIndex, pageSize)
+> EmaopayPagedResponseEmaopayOrder getPagedOrderList(status, merchantId, productId, searchKey, pageIndex, pageSize)
 
 获取订单列表
 
@@ -850,7 +850,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List&lt;EmaopayPagedResponseEmaopayOrder&gt;**](EmaopayPagedResponseEmaopayOrder.md)
+[**EmaopayPagedResponseEmaopayOrder**](EmaopayPagedResponseEmaopayOrder.md)
 
 ### Authorization
 

@@ -1389,9 +1389,9 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayOrder>, Emaopay
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future] containing a [Response] with a [List<EmaopayPagedResponseEmaopayOrder>] as data
+  /// Returns a [Future] containing a [Response] with a [EmaopayPagedResponseEmaopayOrder] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<List<EmaopayPagedResponseEmaopayOrder>>> getPagedOrderList({ 
+  Future<Response<EmaopayPagedResponseEmaopayOrder>> getPagedOrderList({ 
     required String status,
     required String merchantId,
     required String productId,
@@ -1432,11 +1432,11 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayOrder>, Emaopay
       onReceiveProgress: onReceiveProgress,
     );
 
-    List<EmaopayPagedResponseEmaopayOrder>? _responseData;
+    EmaopayPagedResponseEmaopayOrder? _responseData;
 
     try {
 final rawData = _response.data;
-_responseData = rawData == null ? null : deserialize<List<EmaopayPagedResponseEmaopayOrder>, EmaopayPagedResponseEmaopayOrder>(rawData, 'List<EmaopayPagedResponseEmaopayOrder>', growable: true);
+_responseData = rawData == null ? null : deserialize<EmaopayPagedResponseEmaopayOrder, EmaopayPagedResponseEmaopayOrder>(rawData, 'EmaopayPagedResponseEmaopayOrder', growable: true);
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -1447,7 +1447,7 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayPagedResponseEm
       );
     }
 
-    return Response<List<EmaopayPagedResponseEmaopayOrder>>(
+    return Response<EmaopayPagedResponseEmaopayOrder>(
       data: _responseData,
       headers: _response.headers,
       isRedirect: _response.isRedirect,
