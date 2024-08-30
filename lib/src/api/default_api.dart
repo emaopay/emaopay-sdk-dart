@@ -1379,6 +1379,7 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayOrder>, Emaopay
   /// * [status] - 订单状态
   /// * [merchantId] - 商户Id
   /// * [productId] - 产品Id
+  /// * [searchKey] - 搜索关键字
   /// * [pageIndex] - 页码
   /// * [pageSize] - 每页数量
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
@@ -1394,6 +1395,7 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayOrder>, Emaopay
     required String status,
     required String merchantId,
     required String productId,
+    required String searchKey,
     required int pageIndex,
     required int pageSize,
     CancelToken? cancelToken,
@@ -1403,7 +1405,7 @@ _responseData = rawData == null ? null : deserialize<List<EmaopayOrder>, Emaopay
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/api/orders'.replaceAll('{' r'status' '}', status.toString()).replaceAll('{' r'merchantId' '}', merchantId.toString()).replaceAll('{' r'productId' '}', productId.toString());
+    final _path = r'/api/orders'.replaceAll('{' r'status' '}', status.toString()).replaceAll('{' r'merchantId' '}', merchantId.toString()).replaceAll('{' r'productId' '}', productId.toString()).replaceAll('{' r'searchKey' '}', searchKey.toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

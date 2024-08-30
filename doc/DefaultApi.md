@@ -811,7 +811,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getPagedOrderList**
-> List<EmaopayPagedResponseEmaopayOrder> getPagedOrderList(status, merchantId, productId, pageIndex, pageSize)
+> List<EmaopayPagedResponseEmaopayOrder> getPagedOrderList(status, merchantId, productId, searchKey, pageIndex, pageSize)
 
 获取订单列表
 
@@ -825,11 +825,12 @@ final api = EmaopayApi().getDefaultApi();
 final String status = status_example; // String | 订单状态
 final String merchantId = merchantId_example; // String | 商户Id
 final String productId = productId_example; // String | 产品Id
+final String searchKey = searchKey_example; // String | 搜索关键字
 final int pageIndex = 56; // int | 页码
 final int pageSize = 56; // int | 每页数量
 
 try {
-    final response = api.getPagedOrderList(status, merchantId, productId, pageIndex, pageSize);
+    final response = api.getPagedOrderList(status, merchantId, productId, searchKey, pageIndex, pageSize);
     print(response);
 } catch on DioException (e) {
     print('Exception when calling DefaultApi->getPagedOrderList: $e\n');
@@ -843,6 +844,7 @@ Name | Type | Description  | Notes
  **status** | **String**| 订单状态 | 
  **merchantId** | **String**| 商户Id | 
  **productId** | **String**| 产品Id | 
+ **searchKey** | **String**| 搜索关键字 | 
  **pageIndex** | **int**| 页码 | 
  **pageSize** | **int**| 每页数量 | 
 
